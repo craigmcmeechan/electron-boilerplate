@@ -52,7 +52,6 @@ branches:
 addons:
   artifacts:
     s3_region: "us-west-2"
-    working_dir: dist
     paths:
-    - $(ls *.dmg | tr "\n" ":")
-    - $(ls *.exe | tr "\n" ":")
+    - $(ls ./dist/*.dmg | tr "\n" ":")
+    - $(ls ./dist/*.exe | tr "\n" ":")
